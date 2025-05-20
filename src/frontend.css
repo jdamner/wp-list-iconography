@@ -1,0 +1,10 @@
+.wp-block-list li[data-icon-name] {
+	list-style: none;
+}
+
+.wp-block-list li[data-icon-name]::before {
+	margin-right: 0.5em;
+	font-family: "Material Symbols Outlined", sans-serif;
+	content: attr(data-icon-name);
+	color: attr(data-icon-color, currentColor);
+}
